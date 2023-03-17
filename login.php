@@ -14,19 +14,20 @@ include('includes/navbar.php');
                         <h4>Login</h4>
                     </div>
                     <div class="card-body">
-
-                        <div class="form-group mb-3">
-                            <label>Email ID</label>
-                            <input type="email" placeholder="Enter Email Address" class="form-control">
-                        </div>
-                        <div class="form-group mb-3">
-                            <label>Password</label>
-                            <input type="password" placeholder="Enter Password" class="form-control">
-                        </div>
-                        <div class="form-group mb-3">
-                            <button type="submit" class="btn btn-primary">Login Now</button>
-                        </div>
-
+                        
+                        <form action="logincode.php" method="POST">
+                            <div class="form-group mb-3">
+                                <label>Email ID</label>
+                                <input type="email" name="email" required placeholder="Enter Email Address" class="form-control">
+                            </div>
+                            <div class="form-group mb-3">
+                                <label>Password</label>
+                                <input type="password" name="password" required placeholder="Enter Password" class="form-control">
+                            </div>
+                            <div class="form-group mb-3">
+                                <button type="submit" name="login_btn" class="btn btn-primary">Login Now</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
